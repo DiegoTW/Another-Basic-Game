@@ -1,4 +1,15 @@
-const emojis={'-':' ','O':'🚪','X':'💣','I':'🎁','PLAYER':'💀','BOMB_COLLISION':'🔥','GAME_OVER':'👎','WIN':'🏆',};const maps=[];maps.push(`
+const emojis={
+  '-':' ',
+  'O':'🚪',
+  'X':'💣',
+  'I':'🎁',
+  'PLAYER':'💀',
+  'BOMB_COLLISION':'🔥',
+  'GAME_OVER':'👎',
+  'WIN':'🏆',
+};
+const maps=[];
+maps.push(`
   IXXXXXXXXX
   -XXXXXXXXX
   -XXXXXXXXX
@@ -9,7 +20,8 @@ const emojis={'-':' ','O':'🚪','X':'💣','I':'🎁','PLAYER':'💀','BOMB_COL
   -XXXXXXXXX
   -XXXXXXXXX
   OXXXXXXXXX
-`);maps.push(`
+`);
+maps.push(`
   O--XXXXXXX
   X--XXXXXXX
   XX----XXXX
@@ -20,7 +32,8 @@ const emojis={'-':' ','O':'🚪','X':'💣','I':'🎁','PLAYER':'💀','BOMB_COL
   XX--XXX-XX
   XXXX---IXX
   XXXXXXXXXX
-  `);maps.push(`
+`);
+maps.push(`
   I-----XXXX
   XXXXX-XXXX
   XX----XXXX
@@ -30,5 +43,17 @@ const emojis={'-':' ','O':'🚪','X':'💣','I':'🎁','PLAYER':'💀','BOMB_COL
   XX-----XXX
   XX-XXXXXXX
   XX-----OXX
+  XXXXXXXXXX
+`);
+maps.push(`
+  O------XXX
+  XXXXXX--XX
+  XX-XX---XX
+  X--XX-XXXX
+  X------XXX
+  X-XXXX-XXX
+  X--XXX---X
+  XX---XXX-X
+  XXXX---IXX
   XXXXXXXXXX
 `);
