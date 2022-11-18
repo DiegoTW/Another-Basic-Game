@@ -1,11 +1,20 @@
 const canvas = document.querySelector('#game');
 const game = canvas.getContext('2d');
+const btnUp = document.querySelector('#up');
+const btnLeft = document.querySelector('#left');
+const btnRight = document.querySelector('#right');
+const btnDown = document.querySelector('#down');
 
 let canvasSize;
 let elementSize;
 
 window.addEventListener('load', setCanvasSize);
 window.addEventListener('resize', setCanvasSize);
+window.addEventListener('keydown', moveByKeys);
+btnUp.addEventListener('click', moveUp);
+btnLeft.addEventListener('click', moveLeft);
+btnRight.addEventListener('click', moveRight);
+btnDown.addEventListener('click', moveDown);
 
 
 function setCanvasSize() {
@@ -42,10 +51,34 @@ function startGame() {
     });
   });
 
+  
   // for(let row = 1; row <= 10; row++) {
   //   for(let col = 1; col <= 10; col++) {
   //     game.fillText(emojis[mapRowCols[row - 1][col - 1]],
   //       elementSize * col, elementSize * row);
   //   }
   // };
+}
+
+function moveByKeys(event) {
+  if(event.key == 'w' || event.key == 'W' || event.key == 'ArrowUp') moveUp();
+  else if(event.key == 'a' || event.key == 'A'|| event.key == 'ArrowLeft') moveLeft();
+  else if(event.key == 'd' || event.key == 'D'|| event.key == 'ArrowRight') moveRight();
+  else if(event.key == 's' || event.key == 'S'|| event.key == 'ArrowDown') moveDown();
+}
+
+function moveUp() {
+  console.log('Up');
+}
+
+function moveLeft() {
+  console.log('Left');
+}
+
+function moveRight() {
+  console.log('Right');
+}
+
+function moveDown() {
+  console.log('Down');
 }
