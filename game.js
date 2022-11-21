@@ -8,6 +8,11 @@ const btnDown = document.querySelector('#down');
 let canvasSize;
 let elementSize;
 
+const playerPosition = {
+  x: undefined,
+  y: undefined
+}
+
 window.addEventListener('load', setCanvasSize);
 window.addEventListener('resize', setCanvasSize);
 window.addEventListener('keydown', moveByKeys);
